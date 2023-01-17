@@ -1,0 +1,51 @@
+@use 'sass:math';
+
+// インナー幅
+$innerWidth: 1100px;
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+// フォント
+$font-main: 'Montserrat', sans-serif;
+
+// 色指定
+// 文字色
+$black: #000;
+$white: #fff;
+$color-title: #EB6100;  // セクションタイトル色
+$color-nav: #EB6100;    // ナビゲーション色
+// ボーダー色
+$color-border-card: rgba(0, 0, 0, .5); // カードボーダー職
+// 背景色
+$color-bg-header: #FFF9DE;        // ヘッダー背景色
+$color-bg-section: #FFF9DE;       // 色付きセクション背景色
+$color-bg-button1: #EB6100;       // ボタン背景色1
+$color-bg-button1-hover: #FFF;    // ボタンホバー時の背景色1
+$color-bg-button2: #FFF;          // ボタン背景色2
+$color-bg-button1-hover: #EB6100; // ボタンホバー時の背景色2
+$color-bg-footer: #FFF9DE;        // フッター背景色
+
+// ブレイクポイント
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  xl: 1440,
+);
+
+// メディアクエリ
+$mediaquerys: (
+  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// メディアクエリを "@include mq(){}" で書くことができる
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaquerys, $mediaquery)} {
+    @content;
+  }
+}
