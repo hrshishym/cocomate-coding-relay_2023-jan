@@ -1,0 +1,55 @@
+/* Button コンポーネント
+
+# HTML
+
+* タイプ1
+<div class="c-button">
+  <a href="#">Contact</a>
+</div>
+
+* タイプ2
+<div class="c-button c-button--invert">
+  <a href="#">Contact</a>
+</div>
+
+*/
+@use "global" as *;
+
+.c-button {
+    display: block;
+}
+
+.c-button a {
+    display: inline-block;
+    padding: rem(16);
+    min-width: rem(190);
+
+    background-color: $color-bg-button1;
+    border: 1px solid $color-bg-button1;
+    border-radius: rem(6);
+
+    font-family: $font-main;
+    font-size: rem(17);
+    font-weight: $font-medium;
+    color: $color-button1;
+    text-align: center;
+    line-height: calc(21 / 17);
+
+    transition: background-color .3s, color .3s;
+}
+
+.c-button a:hover {
+    background-color: $color-bg-button1-hover;
+    color: $color-button1-hover;
+    opacity: 1;
+}
+
+.c-button.c-button--invert a {
+    background-color: $color-bg-button2;
+    color: $color-button2;
+}
+
+.c-button.c-button--invert a:hover {
+    background-color: $color-bg-button2-hover;
+    color: $color-button2-hover;
+}

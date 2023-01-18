@@ -9,22 +9,30 @@ $padding-sp: 20px;
 
 // フォント
 $font-main: 'Montserrat', sans-serif;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
 
 // 色指定
+$color-main: #EB6100;
 // 文字色
 $black: #000;
 $white: #fff;
-$color-title: #EB6100;  // セクションタイトル色
-$color-nav: #EB6100;    // ナビゲーション色
+$color-title: $color-main;  // セクションタイトル色
+$color-nav: $color-main;    // ナビゲーション色
+$color-button1: $white;
+$color-button1-hover: $color-main;
+$color-button2: $color-main;
+$color-button2-hover: $white;
 // ボーダー色
 $color-border-card: rgba(0, 0, 0, .5); // カードボーダー職
 // 背景色
 $color-bg-header: #FFF9DE;        // ヘッダー背景色
 $color-bg-section: #FFF9DE;       // 色付きセクション背景色
-$color-bg-button1: #EB6100;       // ボタン背景色1
+$color-bg-button1: $color-main;       // ボタン背景色1
 $color-bg-button1-hover: #FFF;    // ボタンホバー時の背景色1
 $color-bg-button2: #FFF;          // ボタン背景色2
-$color-bg-button1-hover: #EB6100; // ボタンホバー時の背景色2
+$color-bg-button2-hover: $color-main; // ボタンホバー時の背景色2
 $color-bg-footer: #FFF9DE;        // フッター背景色
 
 // ブレイクポイント
