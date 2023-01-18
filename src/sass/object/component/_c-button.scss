@@ -53,3 +53,11 @@
     background-color: $color-bg-button2-hover;
     color: $color-button2-hover;
 }
+
+.c-button.c-button--center {
+    text-align: center;
+}
+
+.c-button.c-button--right {
+    text-align: right;
+}
