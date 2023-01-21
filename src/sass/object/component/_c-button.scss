@@ -12,6 +12,16 @@
   <a href="#">Contact</a>
 </div>
 
+* 中央揃え
+<div class="c-button c-button--center">
+  <a href="#">Contact</a>
+</div>
+
+* 右寄せ
+<div class="c-button c-button--right">
+  <a href="#">Contact</a>
+</div>
+
 */
 @use "global" as *;
 
