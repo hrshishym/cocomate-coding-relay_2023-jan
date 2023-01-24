@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -26,24 +27,79 @@
   <!-- JavaScript -->
   <!-- (No Script) -->
 </head>
-<body>
-  <div class="cards">
 
-    <a class="p-card" href="#">
-      <figure class="p-card__img">
-        <img src="./images/blog.jpg" alt="濡れた枝葉">
-    </figure>
-    <div class="p-card__body">
-      <h3 class="p-card__title">Lorem ipsum dolor</h3>
-      <p class="p-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </a>
-</div>
-  <div class="l-inner">
-    <!-- セクションタイトル -->
-    <h2 class="c-section-title">
-      blog
-    </h2>
-  </div>
+<body>
+  <header class="l-header p-header"></header>
+
+  <main>
+
+    <!-- News -->
+    <section class="p-news">
+      <div class="l-inner">
+        <!-- セクションタイトル -->
+        <h2 class="c-section-title p-news__section-title">
+          news
+        </h2>
+
+        <!-- カード -->
+        <div class="p-news__list">
+          <a class="p-card p-news__item" href="#">
+            <figure class="p-card__img">
+              <img src="./images/blog.jpg" alt="濡れた枝葉">
+            </figure>
+            <div class="p-card__body">
+              <h3 class="p-card__title">Lorem ipsum dolor</h3>
+              <p class="p-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </a>
+
+          <a class="p-card p-news__item" href="#">
+            <figure class="p-card__img">
+              <img src="./images/blog.jpg" alt="濡れた枝葉">
+            </figure>
+            <div class="p-card__body">
+              <h3 class="p-card__title">Lorem ipsum dolor</h3>
+              <p class="p-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </a>
+
+          <a class="p-card p-news__item" href="#">
+            <figure class="p-card__img">
+              <img src="./images/blog.jpg" alt="濡れた枝葉">
+            </figure>
+            <div class="p-card__body">
+              <h3 class="p-card__title">Lorem ipsum dolor</h3>
+              <p class="p-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </a>
+
+          <a class="p-card p-news__item" href="#">
+            <figure class="p-card__img">
+              <img src="./images/blog.jpg" alt="濡れた枝葉">
+            </figure>
+            <div class="p-card__body">
+              <h3 class="p-card__title">Lorem ipsum dolor</h3>
+              <p class="p-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </a>
+
+        </div>
+
+        <p class="p-news__message">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        </p>
+
+        <div class="c-button c-button--right p-news__button">
+          <a href="#">More</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="l-footer p-footer"></footer>
+
 </body>
+
 </html>

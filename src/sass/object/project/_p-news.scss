@@ -1,0 +1,48 @@
+/* News
+*/
+@use "global"as *;
+
+// News
+.p-news {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+}
+
+// News: セクションタイトル
+.p-news__section-title {
+
+}
+
+// カードリスト
+.p-news__list {
+    margin-top: rem(80);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: rem(32);
+    row-gap: rem(48);
+}
+
+// カード
+.p-news__item {
+    @include mq(sm) {
+        width: calc((100% - #{rem(32)}) / 2);
+    }
+    @include mq(md) {
+        width: calc((100% - #{rem(32)} * 3) / 4);
+    }
+}
+
+// メッセージ部
+.p-news__message {
+    margin-top: rem(80);
+    font-size: rem(36);
+    font-family: $font-regular;
+    line-height: calc(50 / 36);
+}
+
+// ボタン
+.p-news__button {
+    margin-top: rem(80);
+}
+
