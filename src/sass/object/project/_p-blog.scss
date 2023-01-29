@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.p-blog__text {
+text-align: right;
+margin-top: rem(80);
+font-size: rem(36);
+line-height: calc(50 / 36);
+
+}
+
+
+.p-blog__cards {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}

@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.l-blog {
+margin-top: rem(120);
+}
+
+.l-blog__cards {
+column-gap: rem(33);
+margin-top: rem(100);
+}
+
+.l-blog__button {
+margin-top: rem(80);
+margin-bottom: rem(120);
+}
