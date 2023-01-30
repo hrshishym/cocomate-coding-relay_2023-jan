@@ -8,11 +8,15 @@
   display: block;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   @include mq(md){
     font-size: rem(48);
   }
 }
 
 .c-section-title--right {
-text-align: right;
+  @include mq(md) {
+    text-align: right;
+  
+  }
 }

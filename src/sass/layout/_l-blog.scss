@@ -1,15 +1,24 @@
-@use 'global' as *;
+@use "global" as *;
 
 .l-blog {
-margin-top: rem(120);
+  margin-top: rem(120);
+  @media screen and (min-width: 375px) {
+    margin-top: rem(52);
+  }
 }
 
 .l-blog__cards {
-column-gap: rem(33);
-margin-top: rem(100);
+  column-gap: rem(33);
+  margin-top: rem(100);
 }
 
 .l-blog__button {
-margin-top: rem(80);
-margin-bottom: rem(120);
+  text-align: center;
+  margin-top: rem(50);
+  margin-bottom: rem(50);
+  @include mq(md) {
+    text-align: left;
+    margin-top: rem(80);
+    margin-bottom: rem(120);
+  }
 }
