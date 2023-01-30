@@ -10,7 +10,7 @@
 
 // News: セクションタイトル
 .p-news__section-title {
-
+    text-align: center;
 }
 
 // カードリスト
@@ -37,6 +37,7 @@
 .p-news__message {
     margin-top: rem(80);
     font-size: rem(36);
+    font-size: clamp(1.50000rem, 0.78435rem + 3.05344vw, 2.25000rem); // From 24px@375px To 36@768px
     font-family: $font-regular;
     line-height: calc(50 / 36);
 }
@@ -44,5 +45,9 @@
 // ボタン
 .p-news__button {
     margin-top: rem(80);
+    text-align: center;
+    @include mq(md) {
+        text-align: right;
+    }
 }
 
