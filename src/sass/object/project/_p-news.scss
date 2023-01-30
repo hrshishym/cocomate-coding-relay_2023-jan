@@ -11,6 +11,9 @@
 // News: セクションタイトル
 .p-news__section-title {
     text-align: center;
+    @include mq(md) {
+        text-align: left;
+    }
 }
 
 // カードリスト
