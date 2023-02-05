@@ -1,0 +1,49 @@
+/* Footer
+*/
+@use "global"as *;  
+
+.p-footer {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+    background-color: $color-bg-footer;
+
+    @include mq(md) {
+        padding-top: rem(60);
+    }
+}
+
+.p-footer__logo {
+    width: rem(122);
+    margin-inline: auto;
+}
+.p-footer__nav {
+    margin-top: rem(40);
+}
+.p-footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(12);
+    column-gap: rem(24);
+    justify-content: center;
+    align-items: center;
+
+    @include mq(md) {
+        flex-direction: row;
+    }
+}
+.p-footer__nav-item {
+    font-size: rem(15);
+    font-weight: $font-medium;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: $color-nav;
+}
+
+.p-footer__copy {
+    display: block;
+    margin-top: rem(40);
+    font-size: rem(15);
+    line-height: calc(24 / 15);
+    letter-spacing: -0.015em;
+    text-align: center;
+}
