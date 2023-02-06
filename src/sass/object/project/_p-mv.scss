@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-mv {
+  background-color: #e5e5e5;
+  height: rem(960);
+}
+
+.p-mv__text {
+  font-size: rem(24);
+  line-height: calc(36 / 24);
+}
+
+.p-mv__inner {
+height: inherit;
+}
+.p-mv__contents {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: center;
+}
+
+.p-mv__button {
+margin-top: rem(30);
+
+}
