@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.p-header {
+  height: rem(60);
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: rem(20);
+  padding-right: rem(14);
+  @include mq('md') {
+    padding-left: rem(35);
+    padding-right: rem(22);
+  }
+}
+
+.p-header__nav {
+  height: inherit;
+  display: inline-flex;
+}
+
+.p-header__logo {
+  height: inherit;
+}
+
+.p-header__logo a img {
+  width: rem(82);
+  @include mq(md) {
+    width: rem(122);
+  }
+}
+
+.p-header__logo a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.p-header__wrapper {
+  height: inherit;
+  padding: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.p-header__items {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.p-header__item {
+  height: inherit;
+}
+
+.p-header__item a {
+  height: inherit;
+  color: $color-main;
+  font-weight: $font-medium;
+  font-size: rem(15);
+  line-height: calc(19 / 16);
+  text-transform: uppercase;
+  padding: rem(10) rem(6);
+  position: relative;
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    padding: rem(10) rem(12);
+  }
+}
+
+.p-header__item a:hover {
+  opacity: 1;
+  color: $color-main;
+}
+
+.p-header__item a::after {
+  content: "";
+  width: calc(100% - #{rem(20)});
+  height: 1px;
+  background-color: $color-main;
+  display: inline-block;
+  position: absolute;
+  bottom: rem(20);
+  left: rem(10);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+
+.p-header__item a:hover::after {
+    visibility: visible;
+    opacity: 1;
+    bottom: rem(15);
+}
