@@ -17,12 +17,12 @@
 .p-card__body {
   border: 1px solid #1e1e1e;
   min-height: 200px;
-  // max-width: 345px;
   width: 100%;
   padding: 25px 20px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #fff;
 }
 .p-card__title {
   font-weight: bold;
